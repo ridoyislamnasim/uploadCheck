@@ -14,13 +14,13 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 // database connection
-// mongoose
-//   .connect(process.env.MONGO_CONNECTION_STRING, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => console.log("database connection successful! ------------------------------------------------------------------------------"))
-//   .catch((err) => console.log(err));
+mongoose
+    .connect('mongodb+srv://ridoyislamnasim:59m2Md5nJtmKKdNw@cluster0.dqyagb9.mongodb.net/?retryWrites=true&w=majority', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => console.log("database connection successful! ------------------------------------------------------------------------------"))
+    .catch((err) => console.log(err));
 
 
 

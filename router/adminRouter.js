@@ -2,7 +2,7 @@ const express = require("express");
 const { home, about } = require("../controller/registration");
 const admin = express.Router();
 
-admin.get('/',
+admin.get('',
     // requireSignIn,
     home
 );
