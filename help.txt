@@ -1,0 +1,29 @@
+================== folder name ===========================
+
+controller 		= all controller file here
+midelware		= all midelware file here
+models			= all models file here
+public			= images, js, styledheets, uploads file and img, auth, 404
+router			= auth, 404
+validator		= all validator file here . auth, 404
+views			= all html or ejs file here. utilities , auth, 404
+
+
+============== packages ====================
+npm init
+npm install bcrypt dotenv cookie-parser ejs express  express-validator http-errors jsonwebtoken moment  multer  mongoose socket.io    --seve
+npm install nodemon 
+
+npm init	      = full process startup
+nodemon   	      =run app all time to save 
+express 	      =framework of node.js, response request serverCreat
+ejs 	    	  = tamplate engine 
+multer 	    	  = for file upload
+express-validator = request validation er jonno 
+cookie-parser 	  = browser theke asa cookie read korar jonno
+mongoose	      =database connection with mongooDB
+jsonwebtokn 	  =othintication othorijation part work for(JWT)
+bcryptjs(bcrypt)  =password encode
+dotenv		      =.env file read korar jonno system variable exsess
+http-error 	      = error making halper
+--seve= save it project (plag)
