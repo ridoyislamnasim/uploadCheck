@@ -15,9 +15,9 @@ login = async (req, res) => {
     if (hasAdditionalData) {
         return res.status(400).json({ success: false, errorMsg: 'Invalid request. Only email and password are allowed.' });
     }
-    if (!email && email.trim() === '') {
+    if (!email) {
         res.json({ errorMsg: "email is required" });
-    } else if (!password && password.trim() === '') {
+    } else if (!password) {
         res.json({ errorMsg: "password is required" });
     } else {
         try {
@@ -61,7 +61,7 @@ createStudent = async (req, res) => {
     console.log(req.body)
     const { name, address, phone } = req.body;
 
-    if (!name && name.trim() === '') {
+    if (!name) {
         res.json({ errorMsg: "name is required" });
     } else {
 
